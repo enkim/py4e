@@ -1,0 +1,31 @@
+# Py4e 5.2 assigment 
+
+largest = None
+smallest = None
+
+while True:
+    num = input("Enter a number: ")
+    
+    if num == "done" :
+        break  
+    try:  
+        num = int(num)
+       
+    except:  
+        print ('Invalid input')
+        continue
+        
+    else : 
+        if smallest is None: 
+            smallest = num
+            largest = num 
+        
+        elif num > largest: 
+            largest = num 
+            
+        elif num < smallest: 
+            smallest = num 
+
+        
+print("Maximum is", largest)
+print("Minimum is", smallest)
