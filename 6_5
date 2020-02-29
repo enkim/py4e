@@ -1,0 +1,8 @@
+text = "X-DSPAM-Confidence:    0.8475";
+data1 = text.find('0')
+float(data1)
+data2 = text.find('5')
+float(data2)
+data3 = text[data1:data2+1]
+data4 = float(data3)
+print(data4)
