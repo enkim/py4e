@@ -1,0 +1,6 @@
+# Use words.txt as the file name
+fname = raw_input("Enter file name: ")
+fname1 = open(fname)
+for fname2 in fname1:
+    fname3 = fname2.rstrip()
+    print (fname3.upper())
