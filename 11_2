@@ -1,0 +1,10 @@
+import re
+name = input("Enter file:")
+handle = open(name)
+num = []
+for line in handle:
+    num1 = re.findall('[0-9]+',line)
+    num = num+num1
+num2 = list(map(int,num))
+#print(num2)
+print(sum(num2))
